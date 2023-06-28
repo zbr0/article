@@ -14,9 +14,13 @@ spring:
     database: postgresql
   liquibase:
     change-log: classpath:/liquibase/changelog.xml
-  jwt:
-    secret:
-      access: MzA0NjAyMjEwMGU2NDU1NDY1NDRlNGVhZmUzZjNkNDcwNzM5NDU5MmM4YTY0N2ZkYWU0NzViNjJiOGU0NDIzZWU5ZTU0NDgzZjgwMjIxMDBjNDJiMTc0YTI3NTU1ZmNiZGM3YTExY2MyOTc0ZWQzZWZhZjljODc4NGY2ZDFhNTZjZjc4MTI2MzcwMWMxNWIz
+application:
+  security:
+    jwt:
+      secret-key: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+      expiration: 86400000 # a day
+      refresh-token:
+        expiration: 604800000 # 7 days
 logging:
   file:
     path: /Users/ivanalekseev/Documents/log/
