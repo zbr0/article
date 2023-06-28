@@ -6,9 +6,11 @@ CREATE TABLE "artilce" (
                            "create_at" timestamp
 );
 
-CREATE TABLE "user" (
-                        "id" UUID PRIMARY KEY,
-                        "username" varchar UNIQUE NOT NULL,
-                        "email" varchar UNIQUE NOT NULL,
-                        "password" varchar UNIQUE NOT NULL
+CREATE TABLE "_user" (
+                         "id" UUID PRIMARY KEY,
+                         "firstname" varchar,
+                         "lastname" varchar,
+                         "email" varchar UNIQUE NOT NULL,
+                         "password" varchar UNIQUE NOT NULL,
+                         "role" varchar
 );
