@@ -8,6 +8,6 @@
         logicalFilePath="path-independent">
 
     <!-- Should be only links to per-version cumulative changelog files. -->
-    <include file="scripts/changelog-v.0.1-cumulative.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/changelog-v.0.1-cumulative.xml" relativeToChangelogFile="true"/>
 
 </databaseChangeLog>

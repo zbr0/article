@@ -9,7 +9,7 @@
 
     <changeSet id="1" author="knownasmars@gmail.com" runOnChange="true" failOnError="false">
         <comment>Create tables</comment>
-        <sqlFile path="/scripts/2023-06-28-create-tables.sql" relativeToChangelogFile="true" splitStatements="true" encoding="utf8"/>
+        <sqlFile path="scripts/2023-06-28-create-tables.sql" relativeToChangelogFile="true" splitStatements="true" encoding="utf8"/>
     </changeSet>
 
 
