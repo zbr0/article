@@ -2,6 +2,7 @@ package com.company.article.domain;
 
 import io.swagger.v3.oas.annotations.Hidden;
 import lombok.RequiredArgsConstructor;
+import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -33,13 +34,14 @@ public class ArticleController {
     );
   }
 
+  @SneakyThrows
   @PostMapping
   @PreAuthorize("hasAuthority('user:create')")
   public ResponseEntity<String> create(
           @RequestBody
           CreateArticleRequest createArticleRequest) {
     articleService.add(createArticleRequest);
-    return ResponseEntity.ok("Hello from secured endpoint");
+    return ResponseEntity.ok("Ok");
   }
 
 

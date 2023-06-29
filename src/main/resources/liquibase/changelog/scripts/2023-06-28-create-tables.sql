@@ -1,9 +1,9 @@
 CREATE TABLE "article" (
                            "id" UUID PRIMARY KEY,
-                           "title" varchar,
-                           "content" varchar(100),
-                           "author" varchar,
-                           "created" timestamp
+                           "title" varchar NOT NULL,
+                           "content" varchar(100) NOT NULL,
+                           "author" varchar NOT NULL,
+                           "created" timestamp NOT NULL
 );
 
 CREATE TABLE "_user" (
