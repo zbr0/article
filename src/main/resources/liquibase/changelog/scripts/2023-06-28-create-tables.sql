@@ -1,9 +1,9 @@
-CREATE TABLE "artilce" (
+CREATE TABLE "article" (
                            "id" UUID PRIMARY KEY,
                            "title" varchar,
                            "content" varchar(100),
                            "author" varchar,
-                           "create_at" timestamp
+                           "created" timestamp
 );
 
 CREATE TABLE "_user" (
